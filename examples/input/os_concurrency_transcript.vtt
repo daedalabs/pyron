@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00:05.000 --> 00:00:15.000
+Welcome everyone to lecture eight on Operating Systems. Today we dive into concurrency, threads, and race conditions.
+
+00:00:16.000 --> 00:00:30.000
+Looking at slide two, remember the fundamental difference: processes do not share virtual memory, whereas threads share code, data, and open files.
+
+00:00:31.000 --> 00:00:45.000
+Notice the speed advantage of threads. Because threads share page tables, context switching between threads does not trigger a translation lookaside buffer or TLB invalidation.
+
+00:00:46.000 --> 00:01:02.000
+Now on slide three: when multiple threads access shared variables concurrently, we get race conditions. For your midterm, remember the three criteria: mutual exclusion, progress, and bounded waiting.
+
+00:01:03.000 --> 00:01:20.000
+Moving on to mutexes versus semaphores. A common interview trap: a mutex is NOT just a binary semaphore! A mutex has the concept of ownership; only the thread that locked it can unlock it.
+
+00:01:21.000 --> 00:01:40.000
+Finally on slide five, we have the four Coffman conditions: mutual exclusion, hold and wait, no preemption, and circular wait. To prevent deadlocks, the standard industry technique is lock ordering. Always acquire locks in strict numerical order!

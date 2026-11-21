@@ -1,0 +1,99 @@
+================================================================================
+                    PYRON SOURCE-AVAILABLE SOFTWARE LICENSE
+================================================================================
+
+Copyright (c) 2026, Deogenes Maranan ("Licensor") / DaedaLabs.
+All rights reserved.
+
+This license governs your access to, use of, and integration with the Pyron
+software, source code, compiler algorithms, data contracts, and documentation
+(collectively, the "Software").
+
+By accessing, downloading, installing, copying, embedding, compiling, or using
+the Software, you agree to be bound by the terms and conditions of this Agreement.
+If you do not agree, do not access, download, compile, embed, or use the Software.
+
+--------------------------------------------------------------------------------
+1. GRANT OF LICENSE (PRODUCT INTEGRATION & INTERNAL USE)
+--------------------------------------------------------------------------------
+Subject to the restrictions and requirements in Sections 2 and 3, Licensor
+grants you a non-exclusive, worldwide, revocable license to:
+  (a) View, inspect, study, and modify the source code of the Software;
+  (b) Integrate and embed the Software, in whole or in part, into your own
+      applications, cloud services, commercial products, or internal automated
+      workflows;
+  (c) Distribute the Software solely as an integrated, bundled component of a
+      larger, substantially transformative software application or product.
+
+--------------------------------------------------------------------------------
+2. MANDATORY ATTRIBUTION REQUIREMENTS
+--------------------------------------------------------------------------------
+Any product, service, software application, web platform, or distribution that
+incorporates, links to, calls, or embeds the Software (or any substantially
+derived work) must prominently display visible attribution to the Licensor:
+  (a) In user-facing documentation, "About" screens, CLI `--version`/`--help`
+      outputs, or software credit notices, using the exact text:
+      "Powered by Pyron / DaedaLabs (Deogenes Maranan)"
+  (b) In source code distributions or package dependencies, all copyright
+      notices and this license agreement must remain intact and unaltered in all
+      copies or substantial portions of the Software.
+
+--------------------------------------------------------------------------------
+3. RESTRICTIONS ON STANDALONE REDISTRIBUTION & COPYCATS
+--------------------------------------------------------------------------------
+Except as expressly authorized under Section 1, you shall NOT:
+  (a) Redistribute, publish, broadcast, mirror, sublicense, rent, lease, lend,
+      or sell the Software as a standalone library, standalone compiler, drop-in
+      substitute, or competing utility without adding substantial, novel, and
+      transformative functionality.
+  (b) Rebrand, rename, or resell the Software without substantial value-add.
+      Wrapping, repackaging, renaming, or placing a thin API proxy or trivial
+      wrapper around the Software does NOT constitute transformative functionality.
+  (c) Circumvent, alter, obscure, or remove any copyright notices, license texts,
+      or attribution banners originating from the Software.
+
+--------------------------------------------------------------------------------
+4. CONTRIBUTIONS AND PULL REQUESTS
+--------------------------------------------------------------------------------
+By submitting any code, pull request, patch, bug fix, feature, documentation,
+or other modification ("Contribution") to the project repository, to DaedaLabs,
+or to Licensor:
+  (a) You warrant and represent that the Contribution is your original creation
+      and that you possess full legal right and authority to grant this license;
+  (b) You grant Licensor a perpetual, irrevocable, worldwide, royalty-free,
+      transferable, assignable, fully sublicensable license to use, modify, merge,
+      compile, reproduce, publish, relicense, commercialize, or archive your
+      Contribution under this License or under any other proprietary, open-source,
+      or commercial terms chosen by Licensor, without obligation or compensation
+      to you.
+
+--------------------------------------------------------------------------------
+5. RESERVATION OF RIGHTS & ARCHIVAL
+--------------------------------------------------------------------------------
+Licensor expressly reserves all rights not explicitly granted herein. Licensor
+retains the sole, exclusive right to:
+  (a) Archive, deprecate, or cease development and public maintenance of the
+      repository at any time;
+  (b) Release future updates, releases, or derivative editions under different,
+      updated, or fully closed/proprietary licensing terms.
+
+--------------------------------------------------------------------------------
+6. THIRD-PARTY NOTICES
+--------------------------------------------------------------------------------
+The core Software utilizes permissive open-source libraries (including Pydantic,
+python-docx, python-pptx, and PyYAML), governed by their respective licenses.
+Optional extras (such as PyMuPDF under the `[pdf]` option) are subject to their
+own independent licenses (e.g., AGPL-3.0 / commercial license from Artifex) and
+are not bundled in the core distribution.
+
+--------------------------------------------------------------------------------
+7. DISCLAIMER OF WARRANTY & LIMITATION OF LIABILITY
+--------------------------------------------------------------------------------
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM,
+OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+================================================================================

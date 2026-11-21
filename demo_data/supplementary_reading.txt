@@ -1,0 +1,13 @@
+DISTRIBUTED SYSTEMS SUPPLEMENTARY NOTES
+Course: CS 401 | Term: Fall 2026
+
+PACELC THEOREM EXTENSION:
+Proposed by Daniel Abadi in 2012. It extends CAP by stating:
+- If there is a Partition (P), how does the system trade off Availability (A) and Consistency (C)?
+- Else (E), when the system is running normally without partitions, how does it trade off Latency (L) and Consistency (C)?
+Example: MongoDB is PC/EC (prefers consistency in both states), while Cassandra is PA/EL (prefers availability and low latency).
+
+RAFT LEADER ELECTION RULES:
+1. Node votes for at most one candidate in a given term (First-come-first-served).
+2. Candidate's log must be at least as up-to-date as the voter's log (Log completeness property).
+3. If election timeout elapses without a leader or candidate receiving a majority, a new term begins with fresh randomized timeouts.

@@ -1,0 +1,67 @@
+default_theme: "classic_blue"
+
+themes:
+  classic_blue:
+    id: "classic_blue"
+    name: "Classic Blue"
+    primary: "#1e40af"       # Professional royal/navy blue
+    secondary: "#3b82f6"
+    tint: "#eff6ff"          # Soft blue tint
+    on_primary: "#ffffff"
+    text_dark: "#0f172a"
+    font_heading: "Montserrat, Arial, sans-serif"
+    font_body: "Arial, Roboto, sans-serif"
+
+  slate_neutral:
+    id: "slate_neutral"
+    name: "Slate Monochrome"
+    primary: "#334155"       # Charcoal / Slate
+    secondary: "#64748b"
+    tint: "#f1f5f9"
+    on_primary: "#ffffff"
+    text_dark: "#0f172a"
+
+  forest_green:
+    id: "forest_green"
+    name: "Forest Green"
+    primary: "#166534"       # Deep forest green
+    secondary: "#22c55e"
+    tint: "#f0fdf4"
+    on_primary: "#ffffff"
+    text_dark: "#0f172a"
+
+  deep_violet:
+    id: "deep_violet"
+    name: "Deep Violet"
+    primary: "#5b21b6"       # Royal purple
+    secondary: "#8b5cf6"
+    tint: "#f5f3ff"
+    on_primary: "#ffffff"
+    text_dark: "#0f172a"
+
+  warm_amber:
+    id: "warm_amber"
+    name: "Warm Amber"
+    primary: "#b45309"       # Amber / Ochre
+    secondary: "#f59e0b"
+    tint: "#fef3c7"
+    on_primary: "#ffffff"
+    text_dark: "#0f172a"
+
+  crimson:
+    id: "crimson"
+    name: "Crimson"
+    primary: "#991b1b"       # Deep red
+    secondary: "#ef4444"
+    tint: "#fef2f2"
+    on_primary: "#ffffff"
+    text_dark: "#0f172a"
+
+  teal:
+    id: "teal"
+    name: "Teal"
+    primary: "#115e59"       # Deep teal
+    secondary: "#14b8a6"
+    tint: "#f0fdfa"
+    on_primary: "#ffffff"
+    text_dark: "#0f172a"

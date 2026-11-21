@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Environment and secrets
+.env
+
+# Large archives and media
+*.zip
+*.tar.gz
+*.mp4
+*.mkv
+
+# Build, test, and local tooling outputs
+demo_output/
+demo_bioethics_output/
+test_out/
+out_bundle/
+dist/
+build/
+*.egg-info/
+.ruff_cache/
+.pytest_cache/
+.coverage
+_tmp/
+_testdeps/

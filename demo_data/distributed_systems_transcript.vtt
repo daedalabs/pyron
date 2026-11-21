@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00:02.000 --> 00:00:15.000
+Good morning class. Today we are diving into distributed systems architecture, specifically the CAP theorem, replication trade-offs, and consensus algorithms like Raft.
+
+00:00:16.000 --> 00:00:32.000
+Looking at slide two, Brewer's CAP theorem states that in an asynchronous network, you can only pick two of Consistency, Availability, and Partition Tolerance. But in production, network partitions are inevitable.
+
+00:00:33.000 --> 00:00:50.000
+So in reality, you never choose Consistency and Availability without Partition tolerance. Your true choice is: during a network split, do you want to keep serving potentially stale data, which is AP, or return an error to preserve strict correctness, which is CP?
+
+00:00:51.000 --> 00:01:10.000
+Moving to slide three on replication models. In single-leader replication, synchronous replication gives you strong durability, but if any follower hangs, your whole write pipeline freezes. That's why real-world databases like PostgreSQL and MySQL typically use semi-synchronous or asynchronous replication.
+
+00:01:11.000 --> 00:01:30.000
+Now, pay close attention to slide four on the Raft consensus algorithm. This is a classic interview question. How does Raft prevent split-brain elections? The secret is randomized election timeouts, typically between 150 and 300 milliseconds. One follower's timer will almost always expire first and claim the votes.
+
+00:01:31.000 --> 00:01:50.000
+On slide five, understand the difference between linearizability and eventual consistency. With eventual consistency, you trade off immediate correctness for blazingly fast write performance. Systems like Amazon DynamoDB and Apache Cassandra rely on this.
+
+00:01:51.000 --> 00:02:10.000
+Finally, on the Two Generals problem: it mathematically proves that two parties cannot reach 100% guaranteed consensus across an unreliable communication channel with a finite number of messages. Always keep that in mind when designing fallback mechanisms!
